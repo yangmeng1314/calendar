@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+	<title>calendar</title>
+	
+</head>
+<body>
+
+<!--<img id="season" style="width: 100%;height: 100%;float: left;z-index: -1">
+-->
+<div class="calendar">
+
+	<div class="content_space">
+	<div id="space_left">
+		<p>后续补充内容.....</p>
+	</div>
+	<div class="blank">
+	<div class="select">
+		<select id="chooseyear" onchange="changecalendar('chooseyear','choosemonth')">
+		
+		</select>
+		<span style="line-height: 30px">年</span>
+		<select id="choosemonth" onchange="changecalendar('chooseyear','choosemonth')">
+		
+		</select>
+		<span style="line-height: 30px">月</span>
+		<button id="reset" onclick="reset()">返回今天</button>
+	</div>
+		<table class="header">
+			<tbody>
+			<tr>
+				<th class="wenkend">日</th>
+				<th>一</th>
+				<th>二</th>
+				<th>三</th>
+				<th>四</th>
+				<th>五</th>
+				<th class="wenkend">六</th>
+			</tr>
+			</tbody>
+		</table>
+		<table id="calendar_date"></table>
+		</div>
+		<div id="space_right">
+		
+		</div>
+	</div>
+</div>
+
+
+<script type="text/javascript" src="function.js"></script>
+<script type="text/javascript" src="database.js"></script>
+<script type="text/javascript">
+
+	
+(function(){
+
+/*创建Date数据，方便获取系统Date*/
+var data = Data();
+createSelect();
+/*创建table中每个单元格内容*/
+addDate(data.now_time.getFullYear(),data.now_time.getMonth()+1);
+createContent(data.now_time.getFullYear(),data.now_time.getMonth()+1,data.now_time.getDate());
+changeImg(getSeason(data.now_time.getMonth()+1));
+})();
+
+</script>
+
+</body>
+</html>

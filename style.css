@@ -1,0 +1,121 @@
+
+body{
+	margin: 0;
+	padding: 0;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-attachment: fixed;
+}
+		td{
+			cursor: pointer;
+		}
+	.calendar{
+		
+		width: 100%;
+		height: 100%;
+		
+		//border: 2px solid blue;
+		
+		
+	}	
+		.content_space{
+			border: 2px solid blue;
+			font-size: 15px;
+			
+			margin: 20% auto;
+			//position: absolute;
+			width: 900px;
+			height: 525px;
+			
+			
+		}
+		.blank{
+		
+			margin:0;
+			height:525px;
+			width: 400px;
+			//left:28%;
+			//position: absolute;
+			float:left;
+			//overflow: auto;
+			padding: 0;
+			background: rgba(89,232,47,0.45);
+		}
+			.header{
+			
+			font-size: 20px;
+			text-align: center;
+			margin: 0;
+			
+			width: 380px;
+			height: 45px;
+			margin: 0 10px;
+			
+			border-collapse: collapse;
+		border-bottom: 2px solid rgba(140,102,233,1.00)
+	}
+		#space_left{
+			background: rgba(237,64,67,1.00);
+			width: 250px;
+			height:525px;
+			margin: 0;
+			float: left;
+			padding: 0;
+		}
+		#space_right{
+			text-align: center;
+			background: rgba(56,231,98,1.00);
+			width: 250px;
+			height:525px;
+			margin: 0;
+			float:left;
+			padding: 0;
+			
+			font-size: 18px;
+		}
+		.select{
+			
+			border-bottom: 1px solid blue;
+			width: 400px;
+			height: 28px;
+			
+			line-height: 26px;
+			font-size: 22px;
+			margin: 2px 0 0 0;
+			padding: 0;
+
+			
+		}
+		#calendar_date{
+			//border: 2px solid red;
+			font-size: 15px;
+			text-align: center;
+			margin: 0 10px;
+			
+			width: 380px;
+			height: 450px;
+			
+			border-collapse: collapse; 	
+			
+			table-layout: fixed;
+			overflow: hidden;
+			white-space: nowrap;
+		}
+		#calendar_date tr{
+				border-bottom: 1px solid red;
+				
+		}
+		.buttom{
+			border-bottom: 2px; 
+		}
+		.wenkend{
+			color: red;
+		}
+		.lunar{
+			font-size: 4px;
+		}
+		#reset{
+			float: right;
+			line-height: 22px;
+		}
+		
